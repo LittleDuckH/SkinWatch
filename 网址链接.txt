@@ -1,0 +1,3 @@
+智能体：https://www.modelscope.cn/studios/zzy2002/SkinGLM/
+分类：https://skinclassify.streamlit.app/
+分割：https://skinsegment.streamlit.app/

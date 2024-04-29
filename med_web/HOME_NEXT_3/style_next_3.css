@@ -1,0 +1,109 @@
+.home-2 {
+    background-image:url("../HOME_NEXT_3/img3.jpeg");
+    background-size:100% 100%;
+    width: 100%;
+    height: 100vh;
+}
+
+.home2-content {
+
+    /* text-align: center; */
+    /* justify-content: center; 水平居中 */
+
+}
+
+.home2-content h1 {
+    font-size: 56px;
+    font-weight: 700;
+    margin-left: 1em;
+    opacity: 0;
+    color: black;
+    animation: slideRight 1s ease forwards;
+    animation-delay: 1s;
+    padding-top: 10px; /* 增加文字上面的空间 */
+}
+
+.link p{
+    margin-bottom: 2%;
+    font-size: 25px;
+    font-weight: bold;
+    font-style:normal;
+    color: rgb(0, 0, 0);
+}
+
+#link_1{
+    position: relative; /* 添加 position 属性 */
+    top: 125px; /* 调整垂直位置 */
+    left: 810px; /* 调整水平位置 */
+}
+
+#link_2{
+    position: relative; /* 添加 position 属性 */
+    top: 250px; /* 调整垂直位置 */
+    left: 530px; /* 调整水平位置 */
+}
+
+#link_3{
+    position: relative; /* 添加 position 属性 */
+    top: 250px; /* 调整垂直位置 */
+    left: 830px; /* 调整水平位置 */
+}
+
+#pulse_1{
+    position: relative; /* 添加 position 属性 */
+    top: 190px; /* 调整垂直位置 */
+    left: 750px; /* 调整水平位置 */
+}
+#pulse_2{
+    position: relative; /* 添加 position 属性 */
+    top: 300px; /* 调整垂直位置 */
+    left: 470px; /* 调整水平位置 */
+}
+#pulse_3{
+    position: relative; /* 添加 position 属性 */
+    top: 320px; /* 调整垂直位置 */
+    left: 940px; /* 调整水平位置 */
+}
+
+.pulse ion-icon{
+    font-size: 35px;
+    position: absolute;
+    padding: 7px;
+}
+
+.pulse{
+    width: 3rem;
+    color: #fff;
+    transition: all .5s ease;
+    background: #8e9091;
+    
+}
+
+.pulse,.pulse::before,.pulse::after{
+    content: "";
+    display: grid;
+    grid-area: 1/1;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    box-shadow: 0 0 0 0 #7b7d7e33;
+    animation: pulsing 3s linear infinite var(--s,0s);
+}
+
+.pulse::before{
+    --s:1s
+}
+
+.pulse::after{
+    --s:2s
+}
+
+.pulse:hover{
+    background: #7f828333;
+    color: #FFFFFF99;
+}
+
+@keyframes pulsing{
+to{
+    box-shadow: 0 0 0 6rem #0000;
+}
+}

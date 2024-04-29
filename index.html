@@ -1,0 +1,102 @@
+<!--
+ * @Author: huang
+ * @Date: 2024-04-26 10:31:41
+ * @LastEditors: Do not edit
+ * @LastEditTime: 2024-04-28 12:35:16
+ * @FilePath: \Home_Web\index.html
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="med_web\HOME\style_home.css"/>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+    <!-- 如下是home-next-1的link -->
+    <link rel="stylesheet" href="med_web\HOME_NEXT_1\style_next_1.css"/>
+    <link href="med_web\HOME_NEXT_1\boxicons.min.css" rel="stylesheet"/>
+    <!-- 如下是home-next-2的link -->
+    <link rel="stylesheet" href="med_web\HOME_NEXT_2\style_next_2.css"/>
+    <link href="med_web\HOME_NEXT_2\boxicons.min.css" rel="stylesheet"/>
+
+    <link rel="stylesheet" href="med_web\HOME_NEXT_3\style_next_3.css"/>
+    <link href="med_web\HOME_NEXT_3\boxicons.min.css" rel="stylesheet"/>
+    <title>ProstateAssist</title>
+  </head>
+  <body>
+    <!-- home -->
+    <nav>
+      <div class="menu">
+        <div class="logo">
+          <a href="#">SkinWatch 皮肤癌智能辅助诊断工具</a>
+        </div>
+        <ul>
+          <!-- <li><i class='bx bxs-like bx-flip-vertical '></i></li> -->
+          <li><a href="#">主页</a></li>
+          <li><a href="#" id="button1">分割诊断</a></li>
+          <li><a href="#" id="button2">分类诊断</a></li>
+          <li><a href="#main_id" id="button">医学咨询</a></li>
+        </ul>
+      </div>
+      
+    </nav>
+    <div class="image-box">
+      <img class="image-background" src="med_web\HOME\img.gif" alt="MedAssist Background Image">
+    </div>
+    <div class="center">
+      <div class="title" style="color: white;">SkinWatch</div>
+      <div class="sub_title" style="color: white;">皮 肤 癌 智 能 辅 助 诊 断 工 具</div>
+      <ul>
+        <!-- <li><a href="#">分割诊断</a></li> -->
+        <li><a href="#">开始诊断</a></li>
+        <!-- <li><a href="#home_id">下滑</a></li> -->
+        
+      </ul>
+    </div>
+
+    <section class="home" id="home_id">
+        <div class="home-content">
+          <h1>皮 肤 癌 危 机</h1>
+          <h2>影响因素：<span id="dynamic-text"></span> <!-- 用于显示动态文字 --></h2>
+          <p>早期诊断是皮肤癌治疗成功的关键</p>
+          <p>但有时候皮肤癌的病变可能很难察觉或被误认为是其他皮肤问题。</p>
+          <p>这可能导致延误治疗，使病情恶化。</p>
+          <a href="#home_id2" class="btn">下滑</a>      
+        </div>
+    
+    </section>
+    <script src="test.js"></script>
+
+    <section class="home-2" id="home_id2"> 
+      <div class="home2-content">
+        <!-- <h1>皮 肤 癌 科 普</h1> -->
+        <!-- <div id="circle" onclick="handleClick()"></div> -->
+        <a href="https://www.kepuchina.cn/article/articleinfo?business_type=100&ar_id=294151" class="pulse" id="pulse_1"> 
+          <ion-icon name="finger-print"></ion-icon>
+        </a>
+        <div class="link" id="link_1"><p> 病因与治疗</p></div>
+        <a href="https://www.clifford-hospital.org/service/healthnews_370.html" class="pulse" id="pulse_2"> 
+          <ion-icon name="finger-print"></ion-icon>
+        </a>
+        <div class="link" id="link_2"><p> 预防</p></div>
+        <a href="https://www.epochtimes.com/gb/13/5/7/n3864866.htm" class="pulse" id="pulse_3"> 
+          <ion-icon name="finger-print"></ion-icon>
+        </a>
+        <div class="link" id="link_3"><p> 皮肤护理</p></div>
+      </div>
+    </section>
+
+    <section class="home-1" id="home_id1">
+      <div class="video-container">
+        <video id="v1" autoplay muted loop style="width:100%">
+          <source src="med_web\HOME_NEXT_2\video2.mp4">
+        </video>
+      </div>
+      <!-- 其他内容 -->
+    </section>
+
+    <script src="main.js"></script>
+  </body>
+</html>
